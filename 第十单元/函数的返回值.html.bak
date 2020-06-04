@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+	<script>
+		// 函数的返回值
+		// 1、就是函数内部 return 后面的结果
+		// 2、函数内部没有return 默认返回undefined
+		// 3、函数有return return后面没有值 返回undefined
+
+		// 注意：1、函数返回值可以是任意类型
+	    //		 2、函数内部return 后面的代码不会执行
+		//       3、函数内部可以有个return 匹配第一个
+		//       4、return 后面不能换行 必须放在一行
+
+		// 封装一个函数
+		// 计算1-10的和 返回和
+		function fn(){
+			var sum = 0;
+			for(var i = 1;i<=10;i++){
+				sum+=i
+			}
+			return sum
+		
+		}
+	
+
+		// 封装函数
+		// 创建ul节点 ul节点里面有10个li
+		// li 奇数行红色  偶数行绿色
+
+		function fn1(){
+			document.body.innerHTML = "<ul></ul>"
+			var ul = document.querySelector("ul")
+			for(var i = 1;i<=10;i++){
+				ul.innerHTML += `<li>${i}</li>`
+			}
+
+			var lis  = ul.querySelectorAll("li")
+			for(var i = 0;i<lis.length;i++){
+				i%2? lis[i].style.background = "red" : lis[i].style.background = "green"
+			}
+
+
+			
+		}
+
+		
+
+		// 封装函数
+		// 打印倒三角 7层
+
+		function fn2(len){
+		
+			for(var i = 1;i<=len;i++){
+				for(var j = len;j>=i;j--){
+					document.write("*")
+				}
+				document.write("<br>")
+			}
+		}
+		
+
+		fn2(100)
+
+	</script>
+</body>
+
+</html>

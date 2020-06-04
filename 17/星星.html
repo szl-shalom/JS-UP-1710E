@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function random(n,m){
+			return Math.floor(Math.random() * (m - n + 1) + n)
+		}
+
+		setInterval(function(){
+			var str = `<img src=./xingxing.png 
+			style=width:${random(20,200)}px;position:absolute;top:${random(0,800)}px;
+			left:${random(0,1700)}px>`
+
+			document.body.innerHTML += str
+			document.body.style.backgroundColor = "#" + Math.random().toString(16).substr(2,6)
+
+		},100)
+
+	</script>
+ </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       /* for (var i = 0; i <= 4; i += 2) {
+            console.log(i);
+        }
+
+
+
+        以下语句，没有语法错误的是 ?
+        A :for (var i = 0; j = 1; i < 10; i += 2) { }
+        B: for (var s = 0; s <= 10, s = s + 3) { }
+        C: for (var j = 10, s = 0; j > 0; j -= 2) { }
+        D: for (var i = 0, i< 10; i++) { }
+
+
+        以下循环不是死循环的是？
+        A: for (var i = 10; i > 0; i++) { }
+        B: for (var i = 1; i <= 10; i--) { }
+        C: for (var i = 50; i >= 0; i += 5) { }
+        D: for (var i = 5; i <= 30; i += 2) { }
+
+
+        结束本次循环，并开始下一次的关键字是？
+        A: break
+        B: continue
+        C: return
+        D: switch
+
+
+        for (var j = 0, i = 1; i < 10; i += 2) {
+            if (i % 5 == 0) {
+                continue;
+            }
+            j += i;
+        }
+        console.log(j);
+
+
+        for (var i = 1; i < 5; i++) {
+            if (i < 3) {
+                console.log(i)
+            } else {
+                console.log(i + 2)
+            }
+        }
+
+
+        for (var i = 1; i < 10; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+                continue;
+            }
+            console.log(i);
+        } 以上代码的打印结果是？
+        A: 1, 2
+        B: 1, 2, 3, 7, 8, 9
+        C: 1, 2, 4, 6, 7, 8, 9
+        D: 1, 2, 4, 7, 8
+
+
+        var res = 0;
+        for(var i = 0; i < 10; i++){
+            if (i %5==0) {
+                break;
+            }
+            for(var j = 0; j < 3; j++) {
+                res += j;
+            }
+        }
+
+
+        for (var i = 0; i < 3; i++) {
+            if (i >= 2) {
+                continue;
+            }
+            console.log(i);
+        }
+		*/
+
+		console.time("a")
+		for(var i = 0;i<=1000000000;i++){
+		}
+
+		console.timeEnd("a")
+
+    </script>
+</body>
+
+</html>

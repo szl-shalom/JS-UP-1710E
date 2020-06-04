@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		// Number() 将任意类型的数据转化为数字类型  
+		// 特殊的转化
+		//Number(true) // 1
+		//Number(false) // 0
+		//Number(undefined) // NaN
+		//Number(null) // 0
+		//Number("") // 0
+	
+		// NaN  not a numebr 非数 
+		// 凡是和NaN数字运算的结果都是NaN本书
+		// NaN不等于一切
+	
+		// isNaN(被检测的值) 检测是不是非数  会发生隐式类型转换  （偷偷的调用 isNaN(Number(被检测的值))
+		// 是非数 返回true  否则返回false
+	
+	
+		// parseInt()  // 一般用来出来字符串转数字 取整  进行匹配 匹配到第一个非数字字符停止 匹配到数字字符，返回数字字符，没有匹配到，返回NaN
+		// parseFloat  //  一般用来出来字符串转数字 取浮点数 进行匹配 匹配到第一个非数字字符停止 匹配到数字字符，返回数字字符，没有匹配到，返回NaN  注意：可以识别第一个小数点
+	
+		 // String() 转字符串  直接两端加引号
+
+		 // 数据.toString()   转字符串  直接两端加引号  但是:null 和undefined 没有toString() 方法
+	 
+
+	 	 // Boolean()  // 转布尔值
+
+		 // "" NaN 0 undefined null false 这六个转布尔值为false 其他为真
+
+		 // null 只等于undefined和自身
+		 // undefined 只等于null和自身
+		
+
+
+		 // 运算符 
+		 // 算数运算符
+		 // 二元运算符
+		 // + - * / %
+			
+
+		 // 一元运算符
+		 // ++ --
+
+		 //一元运算符 操作数
+		 var a = 10
+		 var b = 5
+		 var res = (true - false) + Number("") - Boolean("NaN") * true +  ++a - b--
+	<!-- 	 var res = 1 + Number("") - Boolean("NaN") * true +  ++a - b--
+		 
+		 var res = 1 + 0 - Boolean("NaN") * true +  ++a - b--
+		 
+		 var res = 1 + 0 - 1 +  ++a - b--
+		 
+		 var res = 1 + 0 - 1 +  11 - 5  -->
+	
+	</script> 
+
+
+	
+ </body>
+</html>

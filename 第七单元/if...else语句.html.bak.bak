@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+		//if else 
+
+		// 格式:
+		//if(条件){
+			//条件表达式的结果转布尔值 为真  执行代码体
+		//}else{
+			//条件表达式的结果转布尔值 为假  执行代码体
+		//}
+
+
+		//if(confirm("今天下雨了吗")){
+			//条件为真 执行
+			//alert(1)
+		//}else{
+			// 条件为假
+		//	alert(2)
+		//}
+
+
+		var  nun1 = +prompt("请第一个数字"),
+		     nun2 = +prompt("请第一个数字");
+		
+		if(num1 < num2){
+			alert(num2 - num1)
+		}else{
+			alert(num1 - num2)
+		}
+
+
+        // 案例一
+        // 用户输入年龄age<18  弹出未成年
+        // 用户输入年龄age>=  您可以进入
+			
+		var age = prompt("请输入年龄");
+
+		if(age < 18){
+			alert("未成年人")
+		}else{
+			alert("成年人")
+		}
+
+
+
+        // <!--案例二-->
+        // *如果是数字再去验证手机号的长度，如果手机号长度不等于11则提示'手机格式错误',
+        // *否则提示输入正确
+        // *如果不是数字则提示用户输入数字。
+
+
+        
+
+
+    </script>
+</body>
+
+</html>

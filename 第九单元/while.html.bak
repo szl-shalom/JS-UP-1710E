@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    		//while(条件表达式){
+    			// 循环代码块
+    		//}
+    		// while 条件表达式的结果 转布尔值（隐式转换） 为真 执行代码块  
+    		//      									   为假 while循环结束
+    		for(var i = 1;i<=9;i++){
+    			for(var j = 1;j<=i;j++){
+    				document.write(`${j} * ${i} = ${j * i} `)
+    			}
+    			document.write("<br />")
+    		}
+    
+			var i = 1;
+			do{
+				if(i === 1 || i===5){
+					document.write("*")
+				}else if(i===2 || i === 4){
+					document.write("**")
+				} else{
+					document.write("**")
+				}
+				document.write("<br />")
+
+
+			}while(i<=5)
+
+
+			var i = 1;
+			while(i<=9){
+				var j = 1;
+				while(j<=i){
+					document.write(`${j} * ${i} = ${j * i} `)
+					j++					
+				}
+				document.write("<br />")
+				i++
+			}
+
+
+
+
+
+			var i = 0
+    		do{
+				var j = 0;
+				if(i<3){
+					do{
+						document.write("*")
+						j++
+					}while(j<=i)
+				}else{
+					do{
+					
+						document.write("*")
+						j++
+					}while(j<5-i)
+				
+				}
+				
+				document.write("<br/>")
+				i++
+			}while(i<5)
+    
+    </script>
+</body>
+
+</html>

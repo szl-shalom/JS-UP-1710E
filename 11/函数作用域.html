@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+	<script>
+	    // 函数内部声明的变量是局部变量  局部作用域
+		// 函数外声明的变量是全局变量    全局作用域
+		//var a = 1
+		//function fun(){
+		//	console.log(a)
+		//}
+		//console.log(a)
+
+		function fun(){
+			var a = 1
+		}
+		console.log(a)
+// 案例1: 
+
+        // console.log(num); // ?  
+        // var num = 2;
+        // console.log(num); // ?  
+
+        //案例2:
+        //var num = 2;
+        //var num;
+        //console.log(num); // 
+
+        // 案例3:
+        //function f() {}
+        //var f;
+        //console.log(f); // ?
+
+
+        // 案例4:  
+        // var f = function() {
+        //     console.log(1);
+        // }
+
+        // function f() {
+        //     console.log(2);
+        // }
+        // f(); // ?
+
+
+        // 案例5:
+        // f(); // ?
+        // var f = function() {
+        //     console.log(1)
+        // }
+
+        // function f() {
+        //     console.log(2)
+        // }
+
+
+        // 案例6:
+
+     // f(); //?
+       // var f = function() {
+      //       console.log('k')
+      //  } 
+
+
+	
+		
+		
+
+	</script>
+</body>
+
+</html>

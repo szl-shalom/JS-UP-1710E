@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="ul">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+
+    var ul = document.getElementById("ul");//通过
+
+
+    // 通过标签 获取所有的li
+	var lis = document.getElementsByTagName("li")
+	console.log(lis)
+    // 打印出来这个集合的length
+	console.log(lis.length)
+    // 设置第一个li的背景色为红色
+    lis[0].style.backgroundColor = "red"
+    // 设置第二个li的边框为 黑色
+    lis[1].style.border = "1px solid #000"
+    // 设置第三个li的字体颜色为红色 大小为30px
+    lis[2].style.color = "red"
+	lis[2].style.fontSize = "30px"
+    // 设置第四个li的上外边距为30px;
+    lis[3].style.marginTop = "30px"
+    // 注意：驼峰命名;
+
+    </script>
+</body>
+</html>

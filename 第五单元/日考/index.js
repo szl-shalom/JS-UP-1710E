@@ -1,0 +1,1 @@
+document.body.innerHTML = "´ó¼ÒºÃ"

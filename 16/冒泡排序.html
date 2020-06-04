@@ -1,0 +1,60 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-08-21 08:27:52
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-08-21 13:05:54
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        // 冒泡排序
+	    // 两两进行比较，大的在后，小的在前，否则交换位置
+		var arr = [2,5,8,4,2,59,20];
+		// 控制边界
+		for(var i =0;i<arr.length-1;i++){
+			// 内层循环
+			for(var j = 0;j<arr.length -1 - i;j++){
+				if(arr[j] > arr[j+1]){
+					var tempObj = swap(arr[j],arr[j+1]);
+					arr[j] = tempObj.a
+					arr[j+1] = tempObj.b
+					
+				}
+			}
+		}
+			console.log(arr)
+
+
+	    function swap(a,b){
+			return {
+				a:b,
+				b:a,
+			}
+		} 
+
+		//总结：1、 两两进行比较  小的在前 大的在后 否则就交换位置
+
+		//核心：1、循环边界问题
+			  //2、判断条件
+			 // 3、交换数据
+
+		
+		
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

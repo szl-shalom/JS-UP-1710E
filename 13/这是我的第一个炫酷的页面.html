@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function random(n,m){
+			return Math.floor(Math.random() * (m - n +1) + n)
+		}
+		// 获取随机颜色
+		function getColor(){
+			var back = "#"
+			for(var i = 0;i<6;i++){
+				back +=random(0,15).toString(16)
+			}
+			return back;
+		}
+			
+	
+		setInterval(function(){
+			、、//document.body.style.backgroundColor = getColor()
+		},100)
+	
+	
+		var arr = ["我是1","大请问群","大请问群无","国药集团与玉女","千万人无二"]
+	
+		
+	
+		for(var i = 0;i<10;i++){
+			var index = Math.floor(Math.random() * arr.length)
+			var res = arr[index]
+			document.body.innerHTML += `<div style=background-color:${getColor()}>${res}</div>`
+		}
+		
+		
+		var str = "1234567890qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+	
+	</script>
+ </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>	
+	<script>
+		// 都不会改变原数组！！！！！！！！！！！！！！！
+
+		// Array.toString()
+		// 将数组的每一位用逗号拼接起来，注意数组每一项会调用toString()
+
+		//var arr = [[1,2,3,4,5],1,2,3,4,5,undefined,null,false,NaN]
+
+		//var res = arr.toString()
+		//console.log(res)
+
+
+	    //Array.join(sp) sp分隔符 如果没有传入参数 默认用逗号分隔
+
+		var arr = [1,2,3,4,5]
+		var res2 = arr.join("|")
+		console.log(res2)
+	</script>
+ </body>
+</html>

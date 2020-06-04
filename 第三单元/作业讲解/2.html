@@ -1,0 +1,49 @@
+<html>
+
+
+
+	<body>
+		
+		<div id="box"></div>
+		<div id="results">
+			
+		</div>
+		<script>
+			<!-- 功能1： -->
+		<!-- （1）定义一个str变量并赋值为‘hello js’ -->
+		var str = "hello js"
+		<!-- （2）获取id为box的元素，并且把str变量的数据类型放到box元素内 -->
+		var box = document.querySelector("#box")
+		box.innerHTML = typeof str
+		<!-- （3）js设置box元素的背景色为#eee，	字体大小为20px -->
+		box.style.backgroundColor = "#eee"
+		box.style.fontSize = "20px"
+		//console.log(box.style.fontSize)
+		<!-- （4）需要有测试的过程 -->
+	<!-- 功能2： -->
+	<!-- （1）定义5个变量，分别存字符串，数字，布尔，null和undefined -->
+		var str = "123",num = 123,flag = true,nu = null,un = undefined;
+
+	<!-- （2）分别测试其数据类型 -->
+		console.log(typeof str)
+		console.log(typeof nu)
+		console.log(typeof num)
+		console.log(typeof un)
+		console.log(typeof flag)
+	<!-- （3）最终以‘xxxx的数据类型是xxxx’的形式放到id为results下对应的span标签内
+			 -->
+	var results = document.querySelector("#results")
+	
+	results.innerHTML =  `<span>str的数据类
+	
+	
+	型是${typeof str}</span>`
+	results.innerHTML += "<span>num的数据类型是"+typeof num +"</span>"
+	results.innerHTML += "<span>nu的数据类型是"+typeof nu +"</span>"
+	results.innerHTML += "<span>un的数据类型是"+typeof un +"</span>"
+	results.innerHTML += "<span>flag的数据类型是"+typeof flag +"</span>"
+	
+		</script>
+	</body>
+
+</html>

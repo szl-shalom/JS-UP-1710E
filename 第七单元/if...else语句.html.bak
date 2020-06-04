@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+		//if else 
+
+		// 格式:
+		//if(条件){
+			//条件表达式的结果转布尔值 为真  执行代码体
+		//}else{
+			//条件表达式的结果转布尔值 为假  执行代码体
+		//}
+		
+		// 声明变量接收用户操作的结果
+		var flag = confirm("今天下雨了吗")
+		// 判断
+		if(flag){
+			//条件为真 执行
+			alert("记得带伞,别变成落汤鸡")
+		}else{
+			//条件为假 执行
+			alert("还是带伞，小心变成落汤鸡")
+		}
+
+
+
+		// 记得数据类型转化为数字！！
+		var  num1 = +prompt("请第一个数字"), // 存储第一个值
+		     num2 = +prompt("请第一个数字"); // 存储第二个值
+		// 判断
+		if(num1 < num2){
+			// 第二个数字大
+			alert(num2 - num1)
+		}else{
+			// 第一个数字大
+			alert(num1 - num2)
+		}
+
+		
+	
+
+        // 案例三
+        // 用户输入年龄age<18  弹出未成年
+        // 用户输入年龄age>=  您可以进入
+		
+		// 接收年龄
+		var age = prompt("请输入年龄");
+		// 判断
+		if(age < 18){
+			alert("未成年人")
+		}else{
+			alert("成年人")
+		}
+
+
+
+
+
+        // <!--案例二-->
+        // *如果是数字  再去验证手机号的长度，如果手机号长度不等于11则提示'手机格式错误',
+        // *否则提示输入正确
+        // *如果不是数字则提示用户输入数字。
+		var num = prompt("请输入手机号")
+		if(isNaN(num)){
+		    //不是数字   如果不是数字则提示用户输入数字。
+			alert("请用户输入数字")
+		}else{
+			// 是数字  再去验证手机号的长度，如果手机号长度不等于11则提示'手机格式错误',否则提示输入正确
+			if(num.length === 11){
+				// 长度为11位
+				alert("输入正确")
+			}else{
+				// 长度不为11位
+				alert("手机格式错误")
+			}
+
+		}
+
+
+		// <!--案例二-->
+        // <!--根据用户输入的内容弹出今天星期几,要求用户必须输入1-7之间的数字,否则弹出‘输入错误请重新输入’-->
+	
+
+        
+
+
+    </script>
+</body>
+
+</html>

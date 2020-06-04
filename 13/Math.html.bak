@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+
+		//console.log(Math.abs())  //绝对值
+       // console.log(Math.ceil()) //向上取正
+       //// console.log(Math.floor()) //向下取正
+       // console.log(Math.round()) //四舍五入 
+       // console.log(Math.max()) //一组数的取最大值
+       // console.log(Math.min()) //一组数的最小值
+       // console.log(Math.random())  //产生随机数[0-1)
+       // console.log(Math.sqrt())  //开平方
+       // console.log(Math.pow())  //求2的10次方
+
+		
+
+		 //Math.random() //返回0-1之间的数字 包括0，不包过1
+		
+		 for(var i = 0;i<=100;i++){
+			var sum = random(0,9)
+			console.log(sum)
+		 }
+
+		 function random(n,m){
+			 return Math.floor(Math.random() * (m - n +1) + n)
+		 }
+		
+		 
+			
+		
+	
+			
+	</script>
+ </body>
+</html>
+	

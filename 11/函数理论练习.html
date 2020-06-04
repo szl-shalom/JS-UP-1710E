@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+            、以下选项中有关函数描述不正确的是
+            A 函数必须有返回值
+            B 函数可以为匿名
+            C 同名函数会覆盖
+            D js没有重载
+
+            test();function test(){console.log(1)}运行结果
+            A 1
+            B 报错
+            C 无结果
+            D 浏览器崩溃
+
+            var test = function(){console.log(9+1)} test;
+            A 1
+            B 3
+            C 4
+            D 无结果
+
+            var running = function(){console.log('eating')} running = 'run'; running();
+            A running
+            B run
+            C 报错
+            D undefind
+
+            函数名下列正确的是
+            A function _$(){}
+            B function 34running(){}
+            C function !(){}
+            D function %(){}
+
+            函数的创建，错误的是
+            A function fun(){}
+            B fun function (){}
+            C var fun = function(){}
+            D function Fun(){} var fun = new Fun(){}
+
+
+            function fun(){console.log('function is running')}运行结果
+            A 无结果
+            B 报错
+            C function is running
+            D console.log('function is running')
+
+
+            function run(){console.log(123)} function run2(){console.log(456)}; run();
+            A 123
+            B 456
+            C 123 456
+            D 报错
+
+
+            var run = functon(){console.log(run)} run = function(){console.log(123)} run();
+            A run
+            B 报错
+            C 123
+            D run 123
+
+
+            var eat = function(){console.log('eating')} eat = 'eat'; eat();
+            A eating
+            B eat
+            C 报错
+            D eating eat
+
+
+            var running = function(){console.log('123')} var running = function(){console.log('run')} runnint();
+            A 123
+            B run
+            C 123 run
+            D 报错
+
+
+            // *****************************************************************************************************
+
+            function checkType(type) { var msg = 0; if (typeof(type) === "undefined") { msg = 1; } else { if (type) { msg = 2; } } return msg; } console.log(checkType());打印的结果为( )
+            A 0
+            B 1
+            C 2
+            D undefined
+
+
+            function getAttr(url, method) { method = method ? method : "get"; console.log(method); } getAttr("http://localhot/live.php", "post"); 打印结果是( )。
+            A "get"
+            B undefined
+            C 报错
+            D "post"
+
+            var add = function (n1, n2, n3) { console.log(arguments.length); } console.log(add.length); add(1, 2)
+            A 3 2 
+            B 2 2
+            C 3 3
+            D 2 3
+
+
+            function getSum(n) { var index = 10; if (typeof(n) === "number") { index = n; } else { index = index + n * 1; } console.log(index); } getSum("+1"); 打印结果是( )。
+            A 11
+            B 10
+            C undefined
+            D NaN
+
+            function myFun( a,b,c ){ console.log( a ); console.log( b ); console.log( c ); } myFun( 10,20 ); 以上代码执行的结果为( )
+            A 10 20 30
+            B 20 10 30
+            C 10 20 undefined
+            D 以上都不对
+
+            function getStr(p,q){ // 如果p小,q大，则返回q减p的值 // 如果p大,q小，则返回p减q的值 // 如果p与q相等，返回p加q的值 } getStr(5,10);注释处的代码正确的写法是（ ）
+            A if(p
+            B if(pq){ p-q; }else{ p+q; }
+            C if(pq){ return p-q; }else{ return p+q; }
+            D 以上都不对
+    </script>
+
+
+    
+
+
+    
+
+   
+</body>
+
+</html>

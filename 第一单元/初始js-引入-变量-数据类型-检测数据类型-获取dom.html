@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<meta charset="utf8"/>
+	</head>
+	
+	<style>
+	
+	</style>
+	<body>
+		
+	
+		<div>
+			<div id="box">
+				<!-- 大家好 -->
+			</div>
+		</div>
+		<div>
+			<div class="box">
+				<!-- 大家好 -->
+			</div>
+		</div>
+			
+			<script>
+	
+			
+			// 什么是JS ?
+			// 脚本语言，弱编程语言，面向对象编程语言
+			// 有什么组成
+			// Bom  Dom Ecmascript
+			// 布兰登艾奇 发明
+			// 网景公司推出
+			
+			
+			// 1引入
+			// 内部 <script> javascript 代码 <script>
+			// 外部 <script>  src = "JS文件路径" <script>
+			// 在body最下面引入JS
+			
+			// 2 注释
+			// 单行注释
+			// javascript 代码
+			// 多行注释
+			//  /*   多行注释内容     */
+			// 注意多看控制台信息
+			
+			//3 变量声明
+			// 什么是变量：单个可变信息的容器
+			// 变量必须以$ _ 字母开头 
+			// 一般采用驼峰式命名规则
+			// 小驼峰：除了第一个单词首字母小写外，其他单词首字母都大写
+			// 大驼峰：每一个单词首字母都大写
+			// var 变量名称
+			// 用var 声明的变量具有变量提升效果
+			// 声明的变量如果不进行赋值，那么值为undefined
+			
+			// 4 数据类型 
+			// 4.1 基本数据类型 5中基本数据类型
+			// 4.1.1 数字  number
+			// 4.1.2 未定义 undefined 
+			// 4.1.3 字符串 string
+			// 4.1.4 布尔 boolean  两个值 真：true 假 false
+			// 4.1.5 null object
+			//var flag = true
+			//console.log(flag)
+
+			// 4.2 引用数据类型
+			// 对象
+			// 1 自定义对象
+			// 2 数组
+			// 3 函数
+			
+						
+			// 5 检测数据类型
+			// typeof(被检测的数据类型) ||  typeof 被检测的数据类型  
+			// 返回值 是一个字符串  "number" |"undefined" | "string" | "boolean" | "object"
+			// var a = 1
+			// console.log( typeof typeof a); // "string"
+			
+			
+			// 6 dom操作
+			// document 文档 
+			// 1 通过标签名称进行获取  el.getElementsByTagName("h1") //获取el下的标签名称为h1标签的所有元素
+			// 2 通过类名进行获取 el.getElementsByClassName("myclass") //获取el下的类名为myclass的所有元素
+			// 3 通过ID名称获取 el.getElementById("box") // 获取一个元素 并且第一次出现的元素
+			
+			// 4 通过css选择器获取  
+		    // 4.1 querySelector(css名称)  获取一个元素 并且第一次出现的元素
+			// 4.2 querySelectorAll(css名称) 获取所有元素
+			
+			// 7 输出
+			// console.log(输入的内容)  输出到控制台
+			// alert(警告的内容)
+			// document.write(内容)
+			
+			
+			// 作业一 
+			// 用外部引入JS
+			// 声明变量a为任意数字
+			var a = 1
+			// 声明变量b为任意数字
+			var b = 2
+			// 控制台打印a和b的和
+			
+			console.log(a + b)
+			// 声明字符串str 为任意字符串
+			var str = "大家"
+			// 控制台打印a和str的和
+			console.log(a + str)
+			
+			// 作业二
+			// 内部引入
+			// 声明 5个变量 分别为5中基本数据类型  如 var num = 1
+			
+			var num = 123,str = "123",flag = false,x = undefined,y = null;
+			var resNum=typeof num
+			// 检测每一个变量的数据类型，并打印到页面中 如 num的数据类型是number
+			document.write("num的数据类型是" +resNum + "<br/>")
+			document.write("str的数据类型是" +typeof str  + "<br/>")
+			document.write("flag的数据类型是" +typeof flag  + "<br/>")
+			document.write("x的数据类型是" +typeof x  + "<br/>")
+			document.write("y的数据类型是" +typeof y  + "<br/>")
+			
+			
+			// 作业三 
+			// 获取所有div元素 并且打印控制台div的个数
+			var divs = document.querySelectorAll("div")
+			divs[0].className = "myClass"
+			divs[1].className = "myClass"
+			divs[2].className = "myClass"
+			divs[3].className = "myClass"
+			// 获取ID名称为box的元素
+			var box = document.querySelector("#box")
+			console.log(box)
+			// 获取class名称为box的元素
+			var box1 = document.getElementsByClassName("box")[0]
+			console.log(box1)
+			
+		
+		
+		</script>
+	</body>
+</html>

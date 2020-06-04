@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+	   // 逻辑运算符
+	
+	   // 逻辑与 &&
+	   // 找假 找到假值就返回 没有找到假值返回最后一个值
+	   // 六个转布尔值为假
+	   // "" NaN undefined null 0 false
+
+	   
+
+	  // var res = 1 && 2 && 3 && 4
+		
+	   //console.log(res)  // 4
+		
+	  // var res1 = true && " " && 1 && null && 0
+
+	  // 1 && alert(123)  //
+
+	   var res  = 2 > 1 &&  5 > 2  //true
+
+
+	   	var res  = 2 > 1 && undefined === null  //false
+
+		// 总结  条件  全真则真 一假则假
+		true &&  true  //=>true 
+
+		true &&  false //=>false
+
+		false &&  true  //=>false
+
+		false &&  false  // =>false
+
+	
+	   // 逻辑或 || 
+
+
+		var res = 1 || 2 || 3 || 4
+
+	   // 找真 找到真值就返回 没有找到真值返回最后一个值
+	   // 可以设置默认值
+		var a = 2;
+
+		a = a || 1
+
+		
+		// 总结 作为条件 全假则假 一真则真
+
+		true ||  true  //=>true 
+
+		true  ||  false //=>true
+
+		false  ||  true  //=>true
+
+		false  ||  false  // =>false
+
+	   // 逻辑非 !
+
+	   // 自身转布尔值 取反
+
+
+	   // 运算顺序  ! > && > ||
+	
+	   // 三元运算符  表达式1 ? 表达式2 : 表达式3
+
+	   // 语法： 表示式1的结果为真(隐式类型转化布尔值) 返回表达式2的结果
+
+	         //  表示式1的结果为假(隐式类型转化布尔值) 返回表达式3的结果
+
+		//表达式1的结果是数字1 转布尔为真  返回表达式2的结果 2
+
+		var res = 1 ? 2 : 3
+
+		// 表达式1的结果为null 转布尔为假  返回表达式3的结果
+		var res = null ? undefined : NaN
+
+        
+	    // 
+
+		var res = true - false ? undefined : NaN
+
+
+	</script>
+ </body>
+</html>

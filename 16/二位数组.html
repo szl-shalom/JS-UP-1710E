@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+
+		// 降维
+		var arr = [[1,2,3],[4,5,6],[7,8,9],[10]]
+		
+		function flat(arr){
+			var arr1 = []
+			arr.forEach(function(item){
+				arr1 = arr1.concat(item)
+			})
+			return arr1
+		}
+
+		//console.log(flat(arr))
+
+		//升维
+		
+		function fun(arr,len){
+			var arr1 = []
+			while(arr.length>0){
+				arr1.push(arr.splice(0,len))
+			}
+			return arr1
+		}
+		var arr = [1]
+        console.log(fun(arr,2))
+
+
+	</script>
+ </body>
+</html>

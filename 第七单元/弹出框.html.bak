@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 三种弹窗	
+		// 所有弹框会阻止当前代码执行，必须等待用户进一步操作（交互）
+		// 1、系统警告框（提示框）  
+		// alert() 返回值为undefined
+		//console.log("123")
+		//var res = alert("我是警告框")
+		//console.log(res)
+		// console.log("等待用户交互")
+		
+		// 2、系统确认框
+		// confirm() 
+	    // 点击确定 返回true  点击取消 返回false
+		//var res = confirm("今天下雨了吗？")
+		//console.log(res)
+		//console.log(typeof res)
+
+        //3、系统输入框
+		//prompt()
+		// 点击确定 返回值的数据类型为字符串 字符串里面的内容是用户输入的内容
+		// 点击取消 返回null
+		//var res = prompt("请用户输入")
+		//console.log(res)
+		//console.log(typeof res)
+
+		//案例
+		//弹出系统确认框 "今天下雨了吗"  用户点击确定 弹出提示框 "记得带伞,别变成落汤鸡" 
+		//点击取消 "还是带伞，小心变成落汤鸡"
+
+	
+		//confirm("今天下雨了吗") ? alert("记得带伞,别变成落汤鸡") : alert("还是带伞，小心变成落汤鸡")
+
+		// 案例
+		// 有用户输入两个数字 弹出两个数字的差值
+		// 第一次输入2 第二次输入 8 弹出6
+		// 第一次输入10 第二次输入5 弹出5
+
+		var num1 = +prompt("请输入第一个数字")
+		var num2 = +prompt("请输入第二个数字")
+
+		num1 < num2 ? alert(num2 - num1) : alert(num1 - num2)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		// Number()
+		// parseInt()
+		// 会忽略前导空格和0，匹配到第一个非数字字符停止
+		parseInt(123)  //123
+		parseInt(123.123)  //123
+		parseInt('123ada')  //123
+		parseInt(undefined) //NaN
+		parseInt(null) //NaN
+		parseInt('123') //123
+		parseInt('123.123') //123
+		parseInt(true) //NaN
+		//parseFloat()
+		// 会忽略前导空格和0，匹配到第一个非数字字符停止, 但是能够识别第一个小数点
+		parseFloat(123)  //123
+		parseFloat(123.123) //123.123
+		parseFloat('123ada')  //123
+		parseFloat(undefined) //NaN
+		parseFloat(null)  //NaN
+		parseFloat('123')  //123
+		parseFloat('123.123')  //123.123
+		parseFloat(true) //NaN
+		
+		//4.2 转字符串
+		//String(被转化的类型) 可以转化任意类型
+		// 直接两端加引号
+
+		//var num = undefined
+		//console.log(String(num)) // "undefined"
+
+		// 被转化的数据类型.toSting()
+		// 直接两端加引号 但是 undefined 和  null 没有toString()
+		//var res = undefined
+		//var s = res.toString()
+		//console.log(s)
+
+		//4.3 转布尔
+		//Boolean(被转化的转化的数据类型)
+		// 1、NaN 
+		// 2、0 
+		// 3、"" 
+		// 4、false 
+		// 5、undefined 
+		// 6、null
+		// 以上六种数据转化布尔值为false 其他为true
+
+		// 运算符
+		// 1 算数运算符 
+		// 1.1 二元运算符
+		// + - * / %
+		// + 运算规则：如果存在至少一端的操作数的数据类型是字符串,那么进行字符串拼接(会发生隐式类型转换)，否则进行数字运算
+		// - / * % 运算规则： 检测操作符两端操作数是否为数字类型，不是转化为数字（会发生隐式类型转换），然后数字运算
+		// 1.2 一元运算符
+		// ++ --
+		// 如果操作数在运算符的后面，先进行自加或者自减，然后在进行赋值，
+		// 如果操作数在运算符的前面，先进行赋值，在进行自加或者自减
+		var a = 1
+		var b = ++a
+		
+		console.log(b)
+	</script>
+ </body>
+</html>

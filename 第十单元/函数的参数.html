@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+	<script>
+		// 函数的参数：
+		// 函数声明事定义的参数，我们把这个参数叫做形参
+		// 函数执行时传入的参数，我们把这个参数叫做实参
+		// 在函数执行时，形参和实参相统一
+		function fun(a){
+			return a
+		}
+		//console.log(fun(1))
+	    // 封装函数，接收两个参数，返回两个值的和
+		// 参数与参数之间用逗号分割
+		// 形参与实参一一对应
+		function fn1(num1,num2){
+			return num1 + num2;
+		}
+
+		//console.log(fn1(12,24))
+		//console.log(fn1(44,44))
+		
+	    // 参数不对等
+		// 在一一对应之前，形参默认值为undefined
+		function fn2(a){
+			console.log(a)
+			// 2 去哪里了？
+		}
+		
+		//fn2(1,2)
+		 
+		function fn3(a,b){
+			console.log(a,b)
+		}
+
+		//fn3()
+
+
+		// arguments就是实参列表
+		function fn4(){
+			console.log(arguments[3])
+			// 2 去哪里了？
+		
+		}
+		
+		//fn4(23,44,1,2,3)
+
+		// 封装一个函数，函数接收任意参数，返回所有参数的和
+       function fn5(){
+		    var sum = 0
+			for(var i = 0;i<arguments.length;i++){
+				sum+=arguments[i]
+			}
+			return sum
+	   }
+	   console.log(fn5(1,2,3,4,5,6,7,8,9,10))
+		
+
+		// 问题来了 在函数内部 arguments和形参有关系？
+
+         /*  案例1：
+         *  封装一个函数，传入两个参数，第一个参数表示循环的起始值，
+         *  第二个参数表示循环的终止值，用来计算从起始值到终止值之间的和，
+         *  例如两个参数分别为start和end，如：start为1，end为10，就计算1到10之间所有数的和，(包括1和10)
+         *  最终将计算出来的结果返回。
+         */
+		
+		function fn6(start,end){
+			var sum = 0
+			for(;start<=end;start++){
+				sum+=start;
+			}
+			return sum
+		}
+
+		//console.log(typeof fn6)
+
+
+		  /*案例2:封装一个函数，对传过来的参数进行判断，返回参数的类型*/
+
+        // 如果参数是string，返回 '字符串'
+        // 如果参数是number，返回'数字'
+        // 如果是boolean，   返回“布尔”
+        // 如果是undefined， 返回'未定义'
+		// 如果是function    返回'函数'
+        // 如果不是以上判断的几种情况，返回null
+			
+
+		function fn7(type){
+			switch(typeof type){
+				case "string":
+					return '字符串';
+				case "number":
+					return '数字';
+				case "boolean":
+					return '布尔';
+				case "undefined":
+					return '未定义';
+				case "function":
+					return '函数';
+				default:
+					return null;
+			
+			}
+			console.log(1)
+		}
+		//console.log(fn7(undefined))
+
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+
+	<script>
+		// 三元表达式
+	   // 表现： 表达式1  ?  表达式2 :  表达式3
+	
+		// 表达式1 结果 （隐式转换）转布尔为真  返回表达式2的结果
+		// 表达式1 结果 （隐式转换）转布尔为假  返回表达式3的结果
+
+
+		var res = 1    ?     2     :     3
+	
+
+		var res = NaN ? null：undefined  
+
+		
+		var res =  1    ?   2    ?     3  :  4   :    4
+
+
+		var index = 0;
+
+		var res = index === 0? "class=active" : ""
+
+
+
+		var res, flag = true;
+
+		if(flag){
+			res = "flag为真"
+		}else{
+			res = "flag为假"
+		}
+
+		var res, flag = true;
+
+		if(flag){
+			res = "flag为真"
+		}else{
+			res = "flag为假"
+		}
+
+
+		
+
+ 		
+	
+	</script>
+	
+ </body>
+</html>

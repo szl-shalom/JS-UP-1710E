@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+		<script>
+
+			var str = "人生就像一杯茶，只会苦一时，不会苦一辈子，其实呢的，学习也是这样，苦也就苦一时，以后会享受一辈子！！！"
+
+			var len = 0
+
+			setInterval(function(){
+				len++
+				if(len === str.length){
+					len = 0
+				}
+				document.body.innerHTML = str.substr(0,len)
+			},20)
+
+		</script>
+ </body>
+</html>

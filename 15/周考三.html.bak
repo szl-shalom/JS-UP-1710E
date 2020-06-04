@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+		<script>
+			//4、进入页面弹出输入框（8分）
+			//5、选择相应数字进入相应程序（8分）
+			//6、选择1后可以显示两个输入框，分别输入姓名及电话（8分）
+			//7、将用户输入的姓名及电话以弹框方式展示出来（8分）
+			//8、选择2后弹框显示计算“水仙花数”题目（8分）
+			//9、再弹出两个输入框输入计算的最小范围值和最大值（8分）
+			//10、计算“水仙花数”并将结果以弹框方式展示出来（8分）
+			//11、完成求“水仙花数”将成绩100存储下来（8分）
+			//12、选择3后则以弹框的方式显示用户输入的姓名，电话，以及完成计算“计算水仙花数”的成绩（8分）
+			//13、选择0，则以弹框方式显示“退出程序”（8分）
+ 
+
+ 			function fun(){
+				while(true){
+					
+			var userNum = prompt(`请选择0 退出 1  个人信息 2 水仙花数 3  查询程序 `)
+
+			switch(userNum){
+				case "0":
+					// 退出程序
+					alert("退出程序")
+					return;
+					break;
+				case "1":
+					// 个人信息
+					var name1 = prompt("请输入名字"),
+						iphone = prompt("请输入电话");
+
+						alert(`你好，${name1},你的电话是${iphone}`)
+					break;
+				case "2":
+					// 水仙花
+					alert("水仙花开始！！！！")
+					var start = +prompt("最小"),
+						end = +prompt("最大"),
+						str = ""
+					
+					for(var i = start;i<=end;i++){
+						var a = i % 10,
+							b = parseInt(i / 10 % 10),
+							c = parseInt(i / 100);
+						if(a*a*a +b*b*b+c*c*c === i){
+							str+=i + ","
+						}
+					}
+					alert(str)
+					var score = 100;
+					break;
+				case "3":
+					// 查询
+					alert(`您的姓名是：${name1},手机号:${iphone},成绩${score}`)
+					break;
+			
+			}
+				}
+			}
+
+			fun()	
+		</script>
+ </body>	
+</html>

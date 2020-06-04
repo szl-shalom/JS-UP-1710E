@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+
+    <!-- 
+       //外部引入JS文件 
+       1、使用JS创建input标签，获取input标签放到变量ipt里面
+		
+       2、设置input的value为"1710E班级周考一成才！！！"
+       3、设置input的字体大小24px,加粗，倾斜
+    -->
+
+<script>
+	// 1、使用JS创建input标签，获取input标签放到变量ipt里面
+		document.body.innerHTML = "<input>"
+		var ipt = document.querySelector("input")
+	// 2、设置input的value为"1710E班级周考一成才！！！"
+	ipt.value = "1710E班级周考一成才！！！"
+	//  3、设置input的字体大小24px,加粗，倾斜
+	ipt.style.fontSize = "24px"
+	ipt.style.fontWeight = "bold"
+	</script> 
+</body>
+
+</html>

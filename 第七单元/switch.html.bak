@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		// 多分支 switch
+
+		//switch(条件表达式){
+			//case 条件一:
+				//条件一通过 执行该代码块
+			//case 条件二:
+				//条件二通过 执行该代码块
+			//case 条件三:
+				//条件一通过 执行该代码块
+		//}		
+		// 基本语法
+		// 条件表达式 === 条件一 返回为true 会执行相应的代码块   会继续执行后面的代码块
+		// break 直接结束switch
+		// default 当没有条件成立时候 默认执行default
+
+
+		switch(1){
+			
+			case 1:
+				console.log("啦啦啦1")
+			case 2:
+				console.log("啦啦啦2")
+			
+			case 3:
+				console.log("啦啦啦3")
+			case 4:
+				console.log("啦啦啦4")
+			default:
+				console.log("当没有条件成立是，我执行")
+		}
+
+	</script>
+ </body>
+</html>

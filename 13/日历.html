@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			box-sizing: border-box;
+		}
+
+		.wrap {
+			margin: 150px auto;
+			width: 700px;
+		}
+
+		ul li {
+			float: left;
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+		}
+
+		.con-ul li {
+			color: #ccc;
+		}
+
+		.con-ul li.active {
+			color: #000;
+		}
+
+
+		.right {
+			position: absolute;
+			right: 20px;
+			top: 10px;
+		}
+
+		.left {
+			position: absolute;
+			right: 50px;
+			top: 10px;
+		}
+
+		.header {
+			position: relative;
+		}
+		.qwe{
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="header">
+			<h1></h1>
+			<button class="left">&lt;</button>
+			<button class="right">&gt;</button>
+		</div>
+		<div class="con">
+			<ul>
+				<li>一</li>
+				<li>二</li>
+				<li>三</li>
+				<li>四</li>
+				<li>五</li>
+				<li>六</li>
+				<li>日</li>
+			</ul>
+			<ul class="con-ul">
+
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		var year = new Date().getFullYear(), //获取年
+			month = new Date().getMonth(), // 获取月
+			date = new Date().getDate(),// 获取日
+			a = year, b = month, c = date,
+			conUl = document.querySelector(".con-ul"),// 获取节点
+			h1 = document.querySelector("h1"),
+			left = document.querySelector(".left"),
+			right = document.querySelector(".right");
+
+		left.onclick = function () {
+			month--;
+			randerDate(year, month)
+		}
+
+		right.onclick = function () {
+			month++;
+			randerDate(year, month)
+		}
+
+
+
+		function randerDate(year, month) {
+			year = new Date(year, month).getFullYear()
+			month = new Date(year, month).getMonth()
+			var lastDate = new Date(year, month + 1, 0).getDate(), //获取本月最后一天
+				prevLastDate = new Date(year, month, 0).getDate(), // 获取上月最后一天几号
+				prevLastDay = new Date(year, month, 0).getDay(),//获取上月最后一天星期几  0-6
+				prevFirstDate = prevLastDate - prevLastDay + 1,// 获取上月第一天
+				html = ""
+			// 核心代码实现
+			// 拼接上个月天数
+			for (var i = 0; i < prevLastDay; i++) {
+				html += `<li>${prevFirstDate++}</li>`
+			}
+			// 拼接本月的天数
+			for (var i = 1; i <= lastDate; i++) {
+				html += `<li class='active ${a===year&&b===month&&c===i?"qwe":""}'>${i}</li>`
+			}
+			// 拼接下个月天数
+			for (var i = 1; i <= 42 - prevLastDay - lastDate; i++) {
+				html += `<li>${i}</li>`
+			}
+
+			conUl.innerHTML = html;
+			h1.innerHTML = `${year}-${month + 1}`
+
+		}
+
+		randerDate(year, month)
+	</script>
+</body>
+
+</html>

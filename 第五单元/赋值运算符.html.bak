@@ -1,0 +1,29 @@
+<html>
+
+	
+	<body>
+			<ul>null</ul>
+			<script>
+				var a ="1"
+					a+="2"  // a = a + "2"  => a = "12"
+					a+="3"  // a = a + "3"  => a = "123"
+					a+="4"  // a = a + "4"  => a = "1234"
+				// console.log(a)
+				
+
+				var ul = document.querySelector("ul")
+				ul.innerHTML += `<li>1</li>` // = > ul.innerHTML = ul.innerHTML +  `<li>1</li>`  => "<li>1</li>"
+				ul.innerHTML += `<li>2</li>` // = > ul.innerHTML = ul.innerHTML +  `<li>2</li>`  => "<li>1</li><li>2</li>"
+				ul.innerHTML += `<li>3</li>`
+				ul.innerHTML += `<li>4</li>`
+				ul.innerHTML += `<li>5</li>` // => ul.innerHTML = ul.innerHTML +  `<li>5</li>`  => "<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li>"
+				
+			
+
+
+
+			
+			</script>
+	</body>
+
+</html>

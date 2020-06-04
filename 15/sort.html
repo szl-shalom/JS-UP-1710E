@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		//var arr = [1,4,7,9,65,4,3,2,6,9]
+		//arr.sort()
+		//console.log(arr)
+
+
+		var arr = [{
+			name:"张三",
+			age:22,
+		},{
+			name:"李四",
+			age:26
+		},{
+			name:"王五",
+			age:12
+		},{
+			name:"赵六",
+			age:14
+		}]
+
+		arr.sort(function(a,b){
+			return a.age - b.age
+		})
+
+		console.log(arr)
+
+
+
+
+	</script>
+ </body>
+</html>

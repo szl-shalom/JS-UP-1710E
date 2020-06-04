@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <script>
+
+	// 逻辑运算符
+
+	// 逻辑与   &&  又称为：短路运算符
+	// 表达式1  &&  表达式2
+	// 语法：如果表达式1的结果转布尔 为真  那么返回表达式2的结果
+	//       如果表达式1的结果转布尔 为假  那么返回表达式1的结果  表达式2不执行
+
+	// 简单规则：逻辑与就是找假值，找到假值就返回，匹配到最后都没有假值，返回最后一个值
+	
+
+	// var res = 2 && 1 => 2
+
+	// var res = 1 && 0 && 3 && 4 && false && 5 && 6
+	
+	
+
+	// 逻辑或 ||  
+	// 表达式1  ||  表达式2
+	// 语法：如果表达式1的结果转布尔 为真  那么返回表达式1的结果 表达式2不执行
+	//       如果表达式1的结果转布尔 为假  那么返回表达式2的结果  
+
+	var res1 = 0 || 1 || "" || undefined 
+
+
+	var def = undefined || 1
+
+
+
+	// 逻辑非 !
+	// 语法： 自身转布尔值 =>取反
+	// !! 快速转化布尔值
+
+	var res2 = !!1
+
+	// 逻辑运算符 优先级 ： ! > && > ||
+
+	var res = 1 && (2 - true || 123 && 2) || undefined + !""
+
+    //var res = 1 && 1 || undefined + !""
+	//var res = 1 && 1 || undefined + true
+	//var res = 1 && 1 || NaN
+	//var res =  1 || NaN
+	//var res = 1
+  </script>
+ </body>
+</html>

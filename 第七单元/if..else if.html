@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		// 多分支
+		// 结构
+		//if(条件表达式1){
+		// 条件表达式1结果 转布尔（隐式转换） 为真 执行代码块
+		//}else if(条件表达式2){
+		// 条件表达式2结果 转布尔（隐式转换） 为真 执行代码块
+		//}else if(条件表达式3){
+		// 条件表达式3结果 转布尔（隐式转换） 为真 执行代码块
+		//}else if(条件表达式4){
+		// 条件表达式4结果 转布尔（隐式转换） 为真 执行代码块
+		//}else if(条件表达式5){
+		// 条件表达式5结果 转布尔（隐式转换） 为真 执行代码块
+		//}else{
+		// 以上条件表达式都不成立 执行该代码块	
+		//}
+
+		// 由用户输入成绩
+		// 100弹出优秀
+		// 90-100 弹出非常好
+		// 80-90 弹出良好
+		// 70-80 弹出一般
+		// 60-70 弹出及格
+		// 0-60 弹出不及格
+		// 其他弹出不合法
+		// 获取成绩
+		// var score = +prompt("请输入成绩")
+		// // 判断非数
+		// if (isNaN(score)) {
+		// 	// 说明不是数字
+		// 	alert("不是数字")
+		// } else {
+		// 	// 说明是数字
+		// 	// 判断区间
+		// 	// 100分
+		// 	if (score === 100) {
+		// 		alert("优秀")
+		// 	// [90-100)
+		// 	} else if (90 <= score && score < 100) {
+		// 		alert("非常好")
+		// 	// [80-90)
+		// 	} else if (80 <= score && score < 90) {
+		// 		alert("良好")
+		// 	// [70-80)			
+		// 	} else if (70 <= score && score < 80) {
+		// 		alert("一般")
+		// 	// [60-70)			
+		// 	} else if (60 <= score && score < 70) {
+		// 		alert("及格")
+		// 	// [0-60)			
+		// 	} else if (0 <= score && score < 60) {
+		// 		alert("不及格")	
+		// 	// 其他
+		// 	} else {
+		// 		alert("输入不合法")
+		// 	}
+		// }
+
+        // 案例一
+        // 用户输入年龄age<18  弹出未成年
+        // 用户输入年龄age在18-59之间  您可以进入
+        // 用户输入年龄 >59  年龄超出返回
+
+
+        // <!--案例二-->
+        // <!--根据用户输入的内容判断今天星期几,要求用户必须输入1-7之间的数字,否则弹出‘输入错误请重新输入’-->
+
+       // <!--案例三-->
+        // *  检测变量a的数据类型
+        // *  是字符串弹出'字符串'
+        // *  是数字: 再判断是正数弹出'正数',负数弹出'负数',否则弹出'NaN'
+        // *  是布尔值: 再判断是true弹出'真',false弹出'假'
+        // *  是undefined弹出'未定义'
+        // *  是对象:再判断是null弹出'空',否则弹出'对象'
+
+
+		var a = 1
+		switch(typeof a){
+			//是数字
+			case "number":
+				// 再判断是正数弹出'正数',负数弹出'负数',否则弹出'NaN'
+				if(a<0){
+					alert("负数")
+				}else if(a>0){
+					alert("正数")
+				} else{
+					alert(NaN)
+				}
+				break
+			//*  是字符串
+			case "string":
+			    //弹出'字符串'
+				alert("字符串")
+				break
+			//	是布尔值
+			case "boolean":
+			//	再判断是true弹出'真',false弹出'假'
+				a?alert("真"):alert("假")
+				break
+			//*  是undefined
+			case "undefined":
+			  //弹出'未定义'
+				alert("undefined")
+				break
+			//*  是对象
+			case "object":
+			// 再判断是null弹出'空',否则弹出'对象'
+				if(a===null){
+					alert("空")
+				}else{
+					alert("对象")
+				}
+				break
+		}
+
+
+
+
+
+
+
+        // <!--案例四-->
+        // 高(height)：180cm以上；富(money)：月薪2万；帅(face)：90以上；
+        // 如果这三个条件同时满足，则：“确认过眼神，你是对的人”
+        // 如果这三个条件有为真的情况，则：“嫁了吧，比上不足，比下有余。”
+        // 如果这三个条件都不满足，则：“好的爱情不怕迟到，有缘再见！”
+
+
+        //案例：根据用户输入的分数进行评级 
+        //         使用switch//0-60  不及格  60-70 合格  70-85 良好 85以上优秀
+        // var num = prompt("")
+
+
+
+        // 案例：var a = 1,b = 2, c= 3 使用if弹出最大的数字
+
+
+		// 弹出第一框 要求用户输入第一个数字 不是数字提示 弹出输入非数
+		// 是数字 弹出第二框 要求输入运算符 
+		// 弹出第三框 要求输入第二个数字 不是数字提示 弹出输入非数
+		// 是数字 弹出运算结果
+
+		
+
+		// var num1 = prompt("请输入第一个数字")
+		// if(isNaN(num1)){
+		// 	alert("输入非数")
+		// }else{
+		// 	var sp = prompt("请输入运算符")
+		// 	var num2 = prompt("请输入第二个数字")
+		// 	if(isNaN(num2)){
+		// 		alert("输入非数")
+		// 	}else{
+		// 		switch(sp){
+		// 			case "+":
+		// 			alert(+num1 + +num2)
+		// 				break;
+		// 			case "-":
+		// 			alert(+num1 - +num2)
+		// 				break;
+		// 			case "*":
+		// 			alert(+num1 * +num2)
+		// 				break;
+		// 			case "/":
+		// 			alert(+num1 / +num2)
+		// 				break;
+		// 			case "%":
+		// 			alert(+num1 % +num2)
+		// 				break;
+		// 			default:
+		// 			alert("超出运算返回")
+		// 				break;
+		// 		}
+		// 	}
+		// }
+
+	</script>
+</body>
+
+</html>

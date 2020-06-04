@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+	
+<body>
+	<div>
+	</div>
+
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+
+	<script>
+		var div = document.querySelector("div")
+		div.style.width = "200px"
+		div.style.height = "80px"
+		div.style.border = "1px solid blue"
+		div.innerText = `welcome to
+		                  beijing 
+						  bawei`
+
+		var a = "1" , b = "123", c = "true" , d = "null" , e = "undefined"
+		var p = document.querySelectorAll("p")
+		p[0].innerHTML = a
+		p[1].innerHTML = b
+		p[2].innerHTML = c
+		p[3].innerHTML = d
+		p[4].innerHTML = e
+	</script>
+</body>
+	
+</html>

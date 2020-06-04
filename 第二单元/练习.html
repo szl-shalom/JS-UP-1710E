@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active{
+            width: 100px;
+            height: 100px;
+            background-color: #ff9900;
+            font-style: italic;
+        }
+    </style>
+</head> 
+<body>
+    <div id="box"></div>
+<script>
+// 1、通过id获取div元素
+    var div = document.getElementById("box")
+// 2、给这个元素添加一个类名为active;
+    div.className = "active"
+// 3、设置元素的内容为 1710E;
+   div.innerHTML = "1710E"
+// 4、通过设置JS的方式，设置圆角为 10px;
+   div.style.borderRadius = "10px"
+    // 让文字上下，左右居中
+	div.style.textAlign = "center"
+	div.style.lineHeight = "100px"
+    
+
+</script>
+</body>
+</html>

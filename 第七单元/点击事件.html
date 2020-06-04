@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<button>上</button>
+	<button>下</button>
+	<button>左</button>
+	<button>有</button>
+	<button>变宽</button>
+	<button>变高</button>
+	<button>字体变大</button>
+	<script>
+		document.body.innerHTML += `<div style="margin-left:0;margin-top:0">1710E</div>`
+		var div = document.querySelector("div")
+		div.style.border = "1px solid red"
+		div.style.textAlign = "center"
+		div.style.width = "200px"
+		div.style.height = "100px"
+		div.style.lineHeight = "100px"
+		div.style.fontSize = "16px"
+		var btns = document.querySelectorAll("button")
+		btns[0].onclick = function(){
+			var marginTop = parseInt(div.style.marginTop)
+			marginTop -=5
+			div.style.marginTop = marginTop + "px"
+		
+		}
+
+
+		btns[1].onclick = function(){
+			var marginTop = parseInt(div.style.marginTop)
+
+			marginTop +=5
+
+			div.style.marginTop = marginTop + "px"
+		
+		}
+		btns[2].onclick = function(){
+			var marginLeft = parseInt(div.style.marginLeft)
+
+			marginLeft -=5
+
+			div.style.marginLeft = marginLeft  + "px"
+		
+		}
+		btns[3].onclick = function(){
+			var marginLeft = parseInt(div.style.marginLeft)
+
+			marginLeft +=5
+
+			div.style.marginLeft = marginLeft  + "px"
+		
+		}
+		btns[4].onclick = function(){
+			var width = parseInt(div.style.width)
+
+			width +=5
+
+			div.style.width = width + "px"
+		
+		
+		}
+			btns[5].onclick = function(){
+			var height = parseInt(div.style.height)
+
+			height +=5
+
+			div.style.height = height + "px"
+			div.style.lineHeight =height + "px"
+		
+		}
+		btns[6].onclick = function(){
+			var fontSize = parseInt(div.style.fontSize)
+
+			fontSize +=2
+
+			div.style.fontSize = fontSize + "px"
+		
+		}
+	</script>
+ </body>
+</html>

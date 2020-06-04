@@ -1,0 +1,140 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-08-18 14:27:45
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-08-18 16:16:47
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 封装一个myFormatTime函数，如果传入时间就格式化传入的时间（传入的时间，通过 时间对象（Date） 生成的），如果没有传入时间就格式化当前时间，输出的格式为   2000 - 01 - 02  。
+        // 例1   var time2 = myFormatTime(new Date()); console.log(time2);   //打印结果为    2019-05-21
+        // 例2  var time2 = myFormatTime(); console.log(time2);   //打印结果为    2019-05-21
+        // function myFormatTime(time) {
+        //     time = time || new Date()
+        //     var year = time.getFullYear(),
+        //         month = time.getMonth(),
+        //         date = time.getDate();
+
+        //     return `${year}-${month + 1 < 10 ? "0" + (month + 1) : month + 1}-${date < 10 ? "0" + date : date}`
+
+        // }
+        // console.log(myFormatTime(new Date(2019, 12, 5)))
+
+        // function fun() {
+        //     var num = 0, str = "";
+        //     for (var i = 0; i < arguments.length; i++) {
+        //         typeof arguments[i] === "number" ? num += arguments[i] : null
+        //         typeof arguments[i] === "string" ? str += arguments[i] : null
+        //     }
+
+        //     return str + "|" + num
+
+        // }
+        // console.log(fun(1, 2, 3, "qwe", "wer", "e23", false, null, undefined))
+
+
+        // 案例19: 有一个棋盘，有64个方格，在第一个方格里面放1粒芝麻重量是0.00001kg，
+        //  第二个里面放2粒，第三个里面放4，(指数幂) 
+        //  棋盘的重量的
+
+
+        // function qipan(a, b, c) {
+        //     var sum = 0;
+        //     for (var i = 0; i < b; i++) {
+        //         var temp = 1
+        //         for (var j = 1; j <= i; j++) {
+        //             temp *= c
+        //         }
+        //         sum += temp * a
+        //     }
+        //     return sum;
+
+        // }
+        // console.log(qipan(0.00001, 64, 2))
+
+        // 找出字符串中出现字符最多的次数
+
+        // function getMaxStrLen(str) {
+        //     var sum = 0;
+        //     for (var i = 0; i < str.length; i++) {
+        //         var len = 0;
+        //         for (var j = 0; j < str.length; j++) {
+        //             if (str[i] === str[j]) {
+        //                 len++
+        //             }
+        //         }
+        //         if (sum < len) {
+        //             sum = len
+        //         }
+        //     }
+        //     return sum;
+        // }
+
+        // console.log(getMaxStrLen("qwkfmwe;akdqakkefal"))
+
+
+
+        // 案例21一张纸的厚度大约是0.0008m，对折多少次之后能达到珠穆朗玛峰的高度（8848.13米）？
+        // var i = 0, len = 1
+        // while (true) {
+        //     i++
+        //     len *= 2
+        //     if (len * 0.0008 > 8848.13) {
+        //         console.log(i)
+        //         break;
+        //     }
+        // }
+        // console.log(Math.pow(2, 24) * 0.0008)
+        // var fullName = "Ms";
+        // getStyle("bawei");
+        // function getStyle(user) {
+        //     if (user) {
+        //         var fullName = "." + user;
+        //         console.log(fullName)
+        //     }
+        // }
+
+        // console.log(fullName);
+        // var str = "123" 
+        // for (var i = 9; i >=1; i--) {          
+        //     for (var j = 9; j >= i; j--) {
+        //         document.write(`${j} * ${i} = ${i * j} &nbsp`)
+        //     }
+        //     document.write("<br />")
+        // }
+
+
+        // var n = 1;
+        // do {
+
+        //     console.log(n)
+        //     n++
+        // } while (n < 10)
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    
+<body>
+	<script>
+		// 函数初步
+	
+		// 什么是函数：函数是由事件驱动组成或者封装的重复代码块
+	
+		// 为什么要用函数：简单，方便
+	
+	    // 封装函数要有什么特性：低耦合，高内聚
+				
+		// 怎么用：
+		// 函数声明
+		// 1、函数表达式
+		
+		fun()
+
+		var fun = function (){ // 函数表达式
+			//代码块
+			console.log("我是fun函数,通过函数表达式定义的")
+		}
+
+		// 2、函数声明
+		//function fun1(){  // 函数声明
+			//代码块
+			//console.log("我是fun1函数,通过函数声明定义的")
+		//}
+		//fun1()
+
+		// 使用函数声明的方式具有提升效果
+		//var a
+		//console.log(a)
+
+		//function a(){
+		
+		//}
+		//console.log(a)
+		// a = 1
+
+		//console.log(a)
+
+		// 函数调用
+		// 函数名称()
+
+		//fun()
+		//fun1()
+
+		
+
+		//var myFun =  function (){
+			//console.log(1)
+		//}
+
+		//myFun()
+
+		// 要求封装函数
+		// 打印 9 * 9 乘法表
+		// 用表格包起来
+
+		function fun(){
+			document.write("<table>")
+			for(var i = 1;i<=9;i++){
+				document.write("<tr>")
+				for(var j = 1;j<=i;j++){
+					document.write(`<td style='border:1px solid #ccc'>${j} * ${i} = ${j * i}</td>`)
+				
+				document.write("</tr>")
+			//}
+
+
+			//document.write("</table>")
+		//}
+
+
+		//fun()
+	
+		
+
+		
+	
+
+		
+
+	</script>
+</body>
+
+</html>

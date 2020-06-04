@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1、使用JS创建IMG标签，获取img标签放到变量img里面
+		document.body.innerHTML = "<img />"
+		var img = document.querySelector("img")
+
+        // 2、设置img的src属性，值为"哪吒.jpg"
+		img.src = "哪吒.jpg"
+        // 3、设置大小宽度:500px;高度282px
+		img.style.width = "500px"
+		img.style.height = "282px"
+        // 4、使用JS让图片上下左右居中  
+		img.style.position = "absolute"
+		img.style.top = "50%"
+		img.style.left = "50%"
+		img.style.marginTop  = "-141px"
+		img.style.marginLeft = "-250px"
+        
+
+    </script>
+</body>
+
+</html>

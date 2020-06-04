@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+
+
+	<script>
+		
+		// Number()  //是数字转化为数字 不是数字转化为NaN
+
+		Number(true)  // => 1
+		Number(false)  // => 0
+		Number(undefined)  // => NaN
+		Number(null)  // => 0
+		Number("")  // => 0
+
+
+		// parseInt() // 忽略前导空格和0 匹配第一个为非数字字符 直接返回NaN  匹配到非数字停止 将匹配到的数字返回
+		
+
+		parseInt(123.123) // =>123
+
+		parseInt("123qweq") =>123
+
+	    parseInt("were123qweq") =>NaN
+
+		// parseFloat() // 忽略前导空格和0 匹配第一个为非数字字符 直接返回NaN  匹配到非数字停止 将匹配到的数字返回  能够识别一个并且是第一个小数点
+
+
+		
+		parseInt(123.123) // =>123
+
+		parseInt("123qweq") =>123
+
+	    parseInt("were123qweq") =>NaN
+	</script>>
+ </body>
+</html>

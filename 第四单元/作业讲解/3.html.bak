@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="ul">
+        <li>我是ul的第一个元素</li>
+        <li>我是ul的第二个元素</li>
+        <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+		     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+		     <li>我是ul的第三个元素</li>
+   
+
+     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+		     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+
+     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+		 <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+		     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+
+     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+		 <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+		     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+
+     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+		 <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+		     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+
+     <li>我是ul的第三个元素</li>
+        <li>我是ul的第四个元素</li>
+        <li>我是ul的第五个元素</li>
+        <li>我是ul的第六个元素</li>
+    </ul>
+    <h2 class="ul-h2"></h2>
+
+	<li>1231231231232</li>
+    <script>
+        // 1、声明变量str为"不信 所谓命中注定"
+		var str = "不信 所谓命中注定"
+        // 2、获取ul下的所有li,存储的变量lis中
+		var lis = document.querySelectorAll("#ul li")
+        // 3、获取类名为ul-h2的元素，内容为lis的长度
+		var ulh2 = document.querySelector(".ul-h2")
+		ulh2.innerHTML = lis.length
+		console.log(lis)
+        // 4、获取id名称为ul的倒数第一个li,设置字体大小为26px,居中
+		lis[lis.length - 1].style.fontSize = "26px"
+		lis[lis.length-1].style.textAlign = "center"
+		// 5、获取id名称为ul的第二个li,设置id名称myID 类名为myClass
+    </script>
+</body>
+
+</html>

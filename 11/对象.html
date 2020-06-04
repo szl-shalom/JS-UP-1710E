@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		// 对象：是一组无序的属性集合
+
+		// 怎么创建对象：
+
+		//方式一：对象字面量
+		// var obj = {}
+
+		// //方式二: 通过构造函数
+		// var obj1 = new Object()
+		// // 打印
+		// console.log(obj, obj1)
+		// 建议大家用字面量
+
+		// 对象是键值对组成
+		// 键值对和键值对之间用逗号隔开
+		// 键和值用冒号隔开
+		//var obj  = {
+		//	name:"张三",
+		//	age : 18,
+		//}
+
+		// 通过字面量方式声明对象obj
+		// obj有一个属性name 值为李四
+		//  有一个属性age  值为12
+		// 	有一个方法sayName 控制台打印我是李四
+		// var obj = {
+		// 	name: "李四",
+		// 	age: 12,
+		// 	sayName: function () {
+		// 		console.log(`我是${obj.name}`)
+		// 	}
+		// }
+
+		//obj["sayName"]()
+
+		// 访问对象
+		// 对象.属性名 || 对象[属性名]（处理非法可以用它）
+
+		var obj = {
+			age: 123
+		}
+		console.log(obj.age)
+
+
+		// 添加属性
+		// 对象.属性名 = 值 || 对象[属性名] = 值	
+		//var obj = {}
+		// 添加一个name属性 值是王五
+
+		//obj.name = "王五"
+		//obj.age = 90
+		//obj.name = "赵六"
+
+
+
+		// 删除对象的属性
+		// delete 对象.属性
+		//delete obj.name
+
+		//console.log(obj)
+
+		// 创建一个对象people 
+		// num:0 
+		// run跑 num++
+
+
+		//var people = {
+		//	num : 0,
+		//	run:function(){
+		//		people.num++
+		//	}
+		//}
+
+		//console.log(people.num)
+		//people.run()
+		//console.log(people.num)
+		//people.run()
+		////people.run()
+		//people.run()
+		//people.run()
+		//	people.run()
+		//console.log(people.num)
+
+		// 循环遍历对象 for ... in 
+
+		// var obj = {
+		// 	name: "七七四十九",
+		// 	age: 49
+		// }
+
+		// for (var key in obj) {
+		// 	console.log(key, obj[key])
+
+
+		// }
+
+
+	</script>
+
+
+
+</body>
+
+</html>

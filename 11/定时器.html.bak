@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+        // 间歇定时器
+		//setInterval(function(){
+		//	var date = new Date()
+		//	console.log(date)
+
+
+
+
+		//},1000)
+		// 延时定时器
+		//setTimeout(function(){
+		//	var date = new Date()
+		//	console.log(date)
+		//},3000)
+
+
+		function furtureTime(time){
+			time = +time
+
+			setInterval(function(){
+				var curTime = +new Date()
+				var lastTime = time - curTime
+				// 获取秒
+				var sec = parseInt(lastTime / 1000 % 60);
+				var min = parseInt(lastTime / 1000 / 60 %60);
+				var hour = parseInt(lastTime / 1000 / 60 / 60 % 24)
+				var day = parseInt(lastTime / 1000 / 60 / 60 / 24)
+				document.body.innerHTML = `距离目标日期还剩${day}天 ${hour}小时 ${min}分钟 ${sec}秒`
+			
+			},1000)
+			
+			
+		}
+		
+		furtureTime(new Date(2019,7,17))
+
+		console.log(1)
+	</script>
+ </body>
+</html>

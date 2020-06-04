@@ -1,0 +1,86 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-08-22 08:33:02
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-08-22 08:56:26
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./data.js"></script>
+    <script>
+        var data1 = data.slice(),
+            data2 = data.slice(),
+            data3 = data.slice();
+        // 快速排序
+        function quickSort(arr) {
+            if (arr.length <= 1)
+                return arr;
+            var middleIndex = Math.floor(arr.length / 2),
+                middleData = arr.splice(middleIndex, 1),
+                leftArr = [],
+                rightArr = [];
+            for (var i = 0; i < arr.length; i++) {
+                arr[i] > middleData ? rightArr.push(arr[i]) : leftArr.push(arr[i])
+            }
+            return quickSort(leftArr).concat(middleData, quickSort(rightArr))
+        }
+        console.time("快速排序")
+        console.log(quickSort(data1))
+        console.timeEnd("快速排序")
+
+
+        // 冒泡排序
+        function bubbleSort(arr) {
+            var temp;
+            for (var i = 0; i < arr.length - 1; i++) {
+                for (var j = 0; j < arr.length - 1 - i; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        temp = arr[j + 1]
+                        arr[j + 1] = arr[j]
+                        arr[j] = temp;
+                    }
+                }
+
+            }
+            return arr;
+        }
+
+        console.time("冒泡排序")
+        console.log(bubbleSort(data2))
+        console.timeEnd("冒泡排序")
+
+        // 选择排序
+        function selectSort(arr) {
+            var minIndex, temp;
+            for (var i = 0; i < arr.length; i++) {
+                minIndex = i;
+                for (var j = i + 1; j < arr.length; j++) {
+                    if (arr[minIndex] > arr[j]) {
+                        minIndex = j
+                    }
+                }
+                temp = arr[minIndex]
+                arr[minIndex] = arr[i]
+                arr[i] = temp
+            }
+            return arr;
+        }
+
+        console.time("选择排序")
+        console.log(selectSort(data3))
+        console.timeEnd("选择排序")
+    </script>
+</body>
+
+</html>

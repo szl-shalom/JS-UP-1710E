@@ -1,0 +1,32 @@
+<html>
+
+
+	<body>
+
+		<script>
+			//比较运算符
+			//限定条件: 比较的必须是基本数据类型
+			//语法： 比较的是数值，如果运算符两端是不数值，转化为数值(隐式类型转化)   
+
+			// ==      !=       >       <           >=           <=
+			// 等于    不等于   大于    小于      大于等于     小于等于
+			//console.log(null == undefined)
+			//console.log("1" == 1)
+			//console.log(true == 1)
+			// console.log(null == 0) // false
+			// console.log(undefined == NaN) //false
+			// console.log(true == "1")
+
+			// console.log("abc">="acb")
+
+			// === !==
+			//语法： 比较的是数值和数据类型
+			//console.log(null === undefined)
+			//console.log("1" === 1)
+			console.log(true === true)
+
+			// 基本语法规则
+		</script>
+	</body>
+
+</html>

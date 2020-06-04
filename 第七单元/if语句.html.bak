@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    		//条件语句 if
+			// 格式：
+			//if(条件){
+			//	  代码块
+			//}
+
+			//语法：条件（表达式）的结果 转布尔（隐式转换） 为真 那么执行相邻代码块
+			                                            //  为假 相邻代码块不执行
+			// 注意:条件（表达式）不能不写
+    		 
+			// 当代码块里面只有一条语句的时候，{}可以省略  不建议使用
+    
+			// 案例
+			if(NaN){
+				console.log("啦啦啦")
+			}
+			if(undefined){
+				console.log("啦啦啦")
+			}
+			if(""){
+				console.log("啦啦啦")
+			}
+			if(0){
+				console.log("啦啦啦")
+			}
+			if(false){
+				console.log("啦啦啦")
+			}
+			if(null){
+				console.log("啦啦啦")
+			}
+
+			
+
+			// 案例
+			// 让用户输入一个手机号 如果手机号是11位数字 那么弹出手机号
+			var res = prompt("请用户输入手机号")
+	
+			if(res.length === 11 && !isNaN(res)){
+				alert(res)
+			}
+
+
+			
+    
+    </script>
+</body>
+
+</html>

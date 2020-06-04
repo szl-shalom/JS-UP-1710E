@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		// 水仙花：1、是个三位数  100-999
+	    // 		   2、个位立方 + 十位立方 +百位立方 = 本身
+
+		//for(var i = 100;i<=999;i++){
+			// var a = i % 10 //拿到个位
+			// var b = parseInt(i / 10 % 10)
+			// var c = parseInt(i / 100) // 百位
+		//}
+		var i = 197
+		var a = i % 10 //拿到个位
+		var b = parseInt(i / 10 % 10)
+		var c = parseInt(i / 100) // 百位
+
+
+
+
+	</script>
+ </body>
+</html>

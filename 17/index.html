@@ -1,0 +1,54 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-08-21 20:52:37
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-08-22 08:03:48
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 语法：StringObject.toUpperCase()
+        // 功能：将字符串转化为大写
+        // 参数：无
+        // 返回值：转化为大写字符串
+
+        //var str = "a1b2@#$c"
+        //var str1 = str.toUpperCase()
+        //console.log(str)
+        //console.log(str1)
+
+        // 语法：StringObject.toLowerCase()
+        // 功能：将字符串转化为小写
+        // 参数：无
+        // 返回值：转化为小写字符串
+
+
+        var str = "ABC"
+        var str1 = str.toLowerCase()
+        console.log(str)
+        console.log(str1)	
+
+        //console.log(fun("qweqweWERWERewqwe"))
+
+        function fun(str) {
+            return str.split("").map(function (item) {
+                return item === item.toUpperCase() ? item.toLowerCase() : item.toUpperCase()
+            }).join("")
+        }
+
+
+    </script>
+</body>
+
+</html>

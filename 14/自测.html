@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+		//Task1:
+		//补全代码题：给定字符串 str，检查其是否包含数字，包含返回 true，否则返回 false。
+		function containsNumber(str){
+			for(var i = 0;i<str.length;i++){
+				if(isNaN(str[i])){
+					return false
+				}
+			}
+			return true
+		}
+		//console.log(containsNumber("qweqweqw"))
+		//Task2
+		//编写一个函数 spacify，返回一个每个字符中添加空格的字符。例如：
+		//spacify("ScriptOJ") // => "S c r i p t O J"
+
+		function spacify(str){
+			var str1 = ""
+			for(var i = 0;i<str.length;i++){
+				//str1 += i === str.length - 1 ? str[i] : str[i] + " "
+				if(i === str.length - 1){
+					str1 += str[i]
+				}else{
+					str1 += str[i]+ " "
+				}
+			}
+			return str1
+		}
+		
+
+		//task3:
+		//用函数声明式的方式定义一个函数，输入一个N值，则计算出该值的阶乘，即：n! = 1*2*3*4*5*6*...*N 
+		
+		function fun(num){
+			num = num || 10
+			var sum = 0;
+
+			for(var i = 1;i<=num;i++){
+				var res = 1
+				for(var j = 1;j<=i;j++){
+					res *=j
+				}
+				sum+=res;
+			}
+
+
+			return sum
+		}
+
+		//console.log(fun())
+
+
+
+		//Task4:
+		//用函数表达式方式，封装一个函数，实现求任意个数字参数的和
+		var getSum = function (){
+			var sum = 0
+			for(var i = 0;i<arguments.length;i++){
+				sum += arguments[i]
+			}
+			return sum
+			
+		}
+
+		//console.log(getSum(1,2,3,3,4,5))
+
+		//Task5:
+		//用函数表达式的方式定义一个函数： 传入两个参数，第一个参数表示输出几行，第二参数如果为true表示输出的//是n行的正三角，如果为false,表示输出的是n行的倒三角；
+	//	参数是(3 ,true)
+			
+	//	当参数是 （3，false）
+
+	//	当参数是(4,true)
+
+	//	当参数是（5，false）
+		var fun1  = function (len,flag){
+			for(var i = 1;i<=len;i++){
+				for(var j = 1;j<=i;j=j+0.5){
+					document.write("*")
+				}
+				document.write("<br />")
+			}
+		}
+
+		//fun1(3,1)
+
+		
+		document.write("<table>")
+		for(var i = 9;i>=1;i--){
+			document.write("<tr>")
+			for(var j = 9;j>=i;j--){
+				document.write(`<td style="border:1px solid #ccc">${j} * ${i} = ${i * j}</td>`)
+			}
+			document.write("</tr>")
+		}
+		document.write("</table>")
+
+
+
+    </script>
+</body>
+
+</html>

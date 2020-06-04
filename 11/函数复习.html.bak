@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+	<script>
+
+
+		// 定义：重复代码块或者事件驱动
+
+		// 声明：1、函数表达式 var fun = function (){}
+		//	     2、函数声明 function fun (){}   会提升
+
+		// 执行: 函数名()
+
+
+		// 函数的返回值：1、返回return 后面的值
+	    //			 2、没有return 返回undefined
+
+		// 函数传参 
+
+		function fn(a,b,c){
+		
+		}
+
+		console.log(fn.length)
+
+
+
+
+
+	</script>
+</body>
+
+</html>
